@@ -1,3 +1,5 @@
+package MapLesson;
+
 import lombok.Data;
 
 @Data
