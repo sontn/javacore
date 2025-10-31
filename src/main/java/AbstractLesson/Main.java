@@ -8,6 +8,6 @@ public class Main {
         Animal cat = new Cat("Katty");
         cat.makeSound();
 
-        cat.eat();
+//        cat.eat();
     }
 }
