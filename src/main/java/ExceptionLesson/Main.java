@@ -1,9 +1,14 @@
 package ExceptionLesson;
 
 public class Main {
+
+    public static int[] getMang() {
+        return new int[] {1,2};
+    }
+
     public static void main(String[] args) {
 
-        int[] mang = {1,2};
+        int[] mang = getMang();
         try {
 //            System.out.println(mang[0]);
             System.out.println(mang[2]);
