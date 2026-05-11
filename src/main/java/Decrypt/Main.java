@@ -46,7 +46,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         String encryptedFromDb = "T+y3bKoFmomnem9YnN8hhppPruEf6jEUbN2c5HVHW8nNhjpYzBFHPDSEGAgh07OV83/SWxhsnKRh0ELDQEg19eW/UHj8b4P5JTYp7niBA87HIODZB03ancaiG74ojFaO80F56zFhZgHwRmOpb/N2gO7GJOFM32LUos58jDsOxYvlqP5E/sT78VZr9TYL0wmp3dwm2UEZgkZzoFYIL2c2kTctQTmrcb1+OEfsuoaDKQcVNNcB0EdhIPmLOkzaVYiLN5PkESAgCOJFPTAHQdmZKqpenHhkvL6hfGOzmdjyMo3yA4PWSkhafB6kI2h5uejPG1wh8KncbAXUDCjn+Pls8sMX1mRbayqC7pToYEYvXiifvYi3u2DTj6ECVuoTCNY+4+dxjBVd9/Byzf6ABvw1WGvmKyLEP7sl4ehDW+ROGv4JvfJmrGSe2uSNj79XS4hMzfq3ZUvxpKNqm58P9XGq/Y1bBIj3PnmRXtL2hR0Qt5RroB4w/fh5/X2Xns++x5e6rMBH0w=="; // ciphertext trong DB
-        String secret = "prdDpmpSamSecret";
+        String secret = "123123123";
         System.out.println(decrypt(encryptedFromDb, secret));
 
     }
