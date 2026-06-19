@@ -13,7 +13,7 @@ public class LongestRepeatingCharacterReplacement {
                 freq[c - 'A']++;
 
                 int maxFreq = 0;
-                for (int f: freq) {
+                for (int f : freq) {
                     if (f > maxFreq) {
                         maxFreq = f;
                     }
