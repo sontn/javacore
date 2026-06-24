@@ -1,12 +1,32 @@
 package DSA;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class MaximumDepthofBinaryTree {
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
 
-        int leftDepth = maxDepth(root.left);
-        int rightDepth = maxDepth(root.right);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        int depth = 0;
 
-        return Math.max(leftDepth, rightDepth) + 1;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            for (int i =0; i < size; i++) {
+                TreeNode current = queue.poll();
+
+                if (current.left != null) {
+                    queue.add(current.left);
+                }
+
+                if(current.right !=null) {
+                    queue.add(current.right);
+                }
+            }
+            depth++;
+        }
+        return depth;
     }
 }
